@@ -34,6 +34,7 @@ var client = &http.Client{
 		MaxIdleConnsPerHost: 999,
 	},
 	Timeout: time.Second * 5,
+	Timeout: time.Second * 50,
 }
 
 var clienth2 = &http.Client{
