@@ -48,7 +48,7 @@ var clienth2 = &http.Client{
 		ForceAttemptHTTP2:   true,
 		MaxIdleConnsPerHost: 999,
 	},
-	Timeout: time.Second * 5,
+	Timeout: time.Second * 60,
 }
 
 // ErrOverSize 响应主体过大时返回此错误
